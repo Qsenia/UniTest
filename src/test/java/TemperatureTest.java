@@ -25,4 +25,13 @@ double expected=5+15+10+(-5);
         int expected=(5+15+10+(-5))/days.length;
         Assertions.assertEquals(expected,actual);
     }
+
+    @Test
+    void maxTemp() {
+        Temperature temperature=new Temperature();
+        int[]temps={5, 15, 10, -5};
+        int actual=temperature.maxTemp(temps);
+        int expected=15;
+        Assertions.assertEquals(expected,actual);
+    }
 }
